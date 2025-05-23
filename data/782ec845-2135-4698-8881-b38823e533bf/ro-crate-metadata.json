@@ -1,0 +1,338 @@
+{
+"@context": "https://w3id.org/ro/crate/1.1/context",
+"@graph": [
+{
+"@type": "CreativeWork",
+"@id": "ro-crate-metadata.json",
+"conformsTo": { "@id": "https://w3id.org/ro/crate/1.1" },
+"about": { "@id": "https://catalogue.ceh.ac.uk/id/782ec845-2135-4698-8881-b38823e533bf" }
+},
+{
+"@type":"Dataset",
+"name":"Spatial datasets of radionuclide contamination in the Ukrainian Chernobyl Exclusion Zone",
+"@id": "https://catalogue.ceh.ac.uk/id/782ec845-2135-4698-8881-b38823e533bf",
+"hasPart": [
+{"@id": "#part1_Spatial_dataset.csv"},
+{"@id": "#part2_Plutonium_isotope_measurements.csv"},
+{"@id": "#part3_Plutonium_isotope_layers.csv"},
+{"@id": "#part4_Hot_Particle_Activity.csv"},
+{"@id": "#part5_Fuel_particle_dissolution.csv"},
+{"@id": "#part6_Ivankov_background_radiation.csv"},
+{"@id": "#part6_Ivankov_radionuclide_activity.csv"} ],
+"identifier": {
+"@type":"PropertyValue",
+"propertyID": "https://registry.identifiers.org/registry/doi",
+"value": "doi:10.5285/782ec845-2135-4698-8881-b38823e533bf",
+"url": "https://doi.org/10.5285/782ec845-2135-4698-8881-b38823e533bf"
+},
+"url": "https://doi.org/10.5285/782ec845-2135-4698-8881-b38823e533bf",
+"creditText":"Kashparov, V., Levchuk, S., Zhurba, M., Protsak, V., Khomutinin, Y., Beresford, N.A., Chaplow, J.S. (2017). Spatial datasets of radionuclide contamination in the Ukrainian Chernobyl Exclusion Zone. NERC Environmental Information Data Centre. (Dataset). https://doi.org/10.5285/782ec845-2135-4698-8881-b38823e533bf",
+"description":"Data comprise radionuclide deposition, radioactivity dose measurements, radioactive particle activity and physical characteristic information from soil samples collected within and around the Chernobyl Exclusion Zone (CEZ) following the Chernobyl nuclear accident in 1986. Data include radiocaesium, radiostrontium and soil chemistry parameters from soils collected in 1997, plutonium isotope measurements in soil samples and soil layers collected in 2000 and 2001, 'Hot particle' dataset presenting radionuclide activity and some physical characteristics of 'hot particles' extracted from soils collected in the Ukraine and Poland between 1995 and 1997; and Ivankov region data (radionuclide activity concentrations and natural background dose measurements) from a survey of the Ivankov region, immediately to the south of the CEZ conducted in 2014. Funding for preparing this data set was provided by the EU COMET project (http://www.radioecology-exchange.org/content/comet) and TREE (http://www.ceh.ac.uk/tree) project funded by the NERC, Environment Agency and Radioactive Waste Management Ltd. under the RATE programme.",
+"isAccessibleForFree": true,
+"datePublished":"2017-07-24",
+"keywords": [
+"radioecology"
+,
+{"@type": "DefinedTerm","@id": "http://onto.nerc.ac.uk/CEHMD/topic/5","name": "Environmental risk" }
+,
+{"@type": "DefinedTerm","@id": "http://onto.nerc.ac.uk/CEHMD/topic/7","name": "Environmental survey" }
+,
+{"@type": "DefinedTerm","@id": "http://onto.nerc.ac.uk/CEHMD/topic/8","name": "Radioecology" }
+,
+{"@type": "DefinedTerm","@id": "http://sws.geonames.org/11612601","name": "Chornobyl Exclusion Zone (CEZ)","inDefinedTermSet": "https://www.geonames.org/" }
+,
+{"@type": "DefinedTerm","@id": "http://sws.geonames.org/690791","name": "Ukraine","inDefinedTermSet": "https://www.geonames.org/" }
+,
+{"@type": "DefinedTerm","@id": "http://sws.geonames.org/710403","name": "Chernobyl","inDefinedTermSet": "https://www.geonames.org/" }
+,
+{"@type": "DefinedTerm","@id": "http://www.eionet.europa.eu/gemet/concept/5736","name": "nuclear power plant","inDefinedTermSet": "https://www.eionet.europa.eu/gemet/" }
+,
+{"@type": "DefinedTerm","@id": "http://www.eionet.europa.eu/gemet/concept/6904","name": "radioactive contamination","inDefinedTermSet": "https://www.eionet.europa.eu/gemet/" }
+,
+{"@type": "DefinedTerm","@id": "http://www.eionet.europa.eu/gemet/concept/6928","name": "radionuclide","inDefinedTermSet": "https://www.eionet.europa.eu/gemet/" }
+],
+"author": [
+{"@id": "#author0"},
+{"@id": "#author1"},
+{"@id": "#author2"},
+{"@id": "#author3"},
+{"@id": "#author4"},
+{"@id": "https://orcid.org/0000-0002-8722-0238"},
+{"@id": "https://orcid.org/0000-0002-8058-8697"}
+],
+"contactPoint": [
+{"@id": "#contact0"}
+],
+"@reverse": {
+"citation":[
+{"@id": "https://doi.org/10.5194/essd-10-339-2018"},
+{"@id": "https://doi.org/10.5194/essd-12-1861-2020"},
+{"@id": "https://doi.org/10.1038/s41598-020-70699-3"},
+{"@id": "https://doi.org/10.1016/j.jenvrad.2018.02.007"},
+{"@id": "https://doi.org/10.1007/978-94-024-2101-9_4"},
+{"@id": "https://doi.org/10.29254/2077-4214-2020-3-157-83-88"},
+{"@id": "https://doi.org/10.1038/s41598-020-67620-3"},
+{"@id": "https://doi.org/10.3390/f11030270"}
+]
+},
+"temporalCoverage":[
+"1986-04-26/2014-12-31" ],
+"spatialCoverage": [ {"@id": "#bbox0"}],
+"license": {"@id": "#oglLicence"},
+"distribution": [ {"@id": "#distribution0"}],
+"publisher":{"@id":"https://ror.org/04xw4m193"},
+"provider" : {"@id":"https://ror.org/04xw4m193"},
+"includedInDataCatalog":{ "@id": "#eidc-dataCatalogue"}
+},
+{
+"@id": "#eidc-dataCatalogue",
+"@type":"DataCatalog",
+"name":"Environmental Information Data Centre",
+"alternateName":"EIDC",
+"url":"https://catalogue.ceh.ac.uk/eidc/documents"
+},
+{
+"@id": "https://ror.org/04xw4m193",
+"@type":"Organization",
+"name":"NERC EDS Environmental Information Data Centre",
+"email": "info@eidc.ac.uk"
+}
+,{
+"@id": "#oglLicence",
+"@type": "CreativeWork",
+"name": "Open Government Licence v3",
+"alternateName":"OGL-UK-3.0",
+"license": "https://spdx.org/licenses/OGL-UK-3.0.html"
+}
+, {
+"@id": "#bbox0",
+"@type":"Place",
+"geo":{
+"@type":"GeoShape",
+"box":"19.809 45.989, 40.509 54.451"
+}
+}
+,
+{
+"@id": "#author0",
+"@type": "Person",
+"name": "Kashparov, V."
+, "familyName": "Kashparov"
+, "givenName": "V."
+,"email": "vak@uiar.org.ua"
+,"affiliation":{
+"@id": "https://ror.org/0441cbj57"
+}
+},
+{
+"@id": "#author1",
+"@type": "Person",
+"name": "Levchuk, S."
+, "familyName": "Levchuk"
+, "givenName": "S."
+,"email": "slava@uiar.kiev.ua"
+,"affiliation":{
+"@id": "https://ror.org/0441cbj57"
+}
+},
+{
+"@id": "#author2",
+"@type": "Person",
+"name": "Zhurba, M."
+, "familyName": "Zhurba"
+, "givenName": "M."
+,"email": "marina@uiar.kiev.ua"
+,"affiliation":{
+"@id": "https://ror.org/0441cbj57"
+}
+},
+{
+"@id": "#author3",
+"@type": "Person",
+"name": "Protsak, V."
+, "familyName": "Protsak"
+, "givenName": "V."
+,"email": "valik@uiar.kiev.ua"
+,"affiliation":{
+"@id": "https://ror.org/0441cbj57"
+}
+},
+{
+"@id": "#author4",
+"@type": "Person",
+"name": "Khomutinin, Y."
+, "familyName": "Khomutinin"
+, "givenName": "Yu."
+,"email": "yuriy@uiar.kiev.ua"
+,"affiliation":{
+"@id": "https://ror.org/0441cbj57"
+}
+},
+{
+"@id": "https://orcid.org/0000-0002-8722-0238",
+"@type": "Person",
+"name": "Beresford, N.A."
+, "familyName": "Beresford"
+, "givenName": "N.A."
+,"email": "enquiries@ceh.ac.uk"
+,"identifier": {
+"@type":"PropertyValue",
+"propertyID": "orcid",
+"value": "https://orcid.org/0000-0002-8722-0238"
+}
+,"affiliation":{
+"@id": "https://ror.org/00pggkr55"
+}
+},
+{
+"@id": "https://orcid.org/0000-0002-8058-8697",
+"@type": "Person",
+"name": "Chaplow, J.S."
+, "familyName": "Chaplow"
+, "givenName": "J.S."
+,"email": "enquiries@ceh.ac.uk"
+,"identifier": {
+"@type":"PropertyValue",
+"propertyID": "orcid",
+"value": "https://orcid.org/0000-0002-8058-8697"
+}
+,"affiliation":{
+"@id": "https://ror.org/00pggkr55"
+}
+}
+,
+{
+"@id": "#contact0",
+"@type": "Person",
+"name": "Chaplow, J."
+, "familyName": "Chaplow"
+, "givenName": "Jacky"
+,"email": "enquiries@ceh.ac.uk"
+,"affiliation":{
+"@id": "https://ror.org/00pggkr55"
+}
+}
+, {
+"@id": "https://doi.org/10.5194/essd-10-339-2018",
+"@type": "CreativeWork"
+,"creditText": "Kashparov, V., Levchuk, S., Zhurba, M., Protsak, V., Khomutinin, Y., Beresford, N.A., & Chaplow, J.S. (2018). Spatial datasets of radionuclide contamination in the Ukrainian Chernobyl Exclusion Zone. Earth System Science Data, 10(1), 339â353."
+,"url": "https://doi.org/10.5194/essd-10-339-2018"
+},
+{
+"@id": "https://doi.org/10.5194/essd-12-1861-2020",
+"@type": "CreativeWork"
+,"creditText": "Kashparov, V., Levchuk, S., Zhurba, M., Protsak, V., Beresford, N.A., & Chaplow, J.S. (2020). Spatial radionuclide deposition data from the 60 km radial area around the Chernobyl Nuclear Power Plant: results from a sampling survey in 1987. Earth System Science Data, 12(3), 1861â1875"
+,"url": "https://doi.org/10.5194/essd-12-1861-2020"
+},
+{
+"@id": "https://doi.org/10.1038/s41598-020-70699-3",
+"@type": "CreativeWork"
+,"creditText": "Beaugelin-Seiller, K., Garnier-Laplace, J., Della-Vedova, C., MÃ©tivier, J.-M., Lepage, H., Mousseau, T.A., & MÃ¸ller, A.P. (2020). Dose reconstruction supports the interpretation of decreased abundance of mammals in the Chernobyl Exclusion Zone. Scientific Reports, 10(1)"
+,"url": "https://doi.org/10.1038/s41598-020-70699-3"
+},
+{
+"@id": "https://doi.org/10.1016/j.jenvrad.2018.02.007",
+"@type": "CreativeWork"
+,"creditText": "Beresford, N.A., Barnett, C.L., Gashchak, S., Maksimenko, A., Guliaichenko, E., Wood, M.D., & Izquierdo, M. (2020). Radionuclide transfer to wildlife at a âReference siteâ in the Chernobyl Exclusion Zone and resultant radiation exposures. Journal of Environmental Radioactivity, 211, 105661"
+,"url": "https://doi.org/10.1016/j.jenvrad.2018.02.007"
+},
+{
+"@id": "https://doi.org/10.1007/978-94-024-2101-9_4",
+"@type": "CreativeWork"
+,"creditText": "Schofield, P.N., Kulka, U., Tapio, S., Woloschak, G., Gruenberger, M., Saigusa, S., Birschwilks, M., & Grosche, B. (2022). Data and Biomaterial Archives in Radioecology and Radiobiology; the Importance of STOREing. Biomarkers of Radiation in the Environment, 53-65"
+,"url": "https://doi.org/10.1007/978-94-024-2101-9_4"
+},
+{
+"@id": "https://doi.org/10.29254/2077-4214-2020-3-157-83-88",
+"@type": "CreativeWork"
+,"creditText": "Ruban, Y.V., Shavanova, K.E., Samofalova, D.O., Nikonov, S.B. & Pareniuk, O.Y. (2020) Comparison of microbiomes of two different ecotypes of the Chornobyl exclusion zone: points of temporary localization of radioactive waste (PTLRW) and contaminated ecosystem. Bulletin of Problems Biology and Medicine 3, 83"
+,"url": "https://doi.org/10.29254/2077-4214-2020-3-157-83-88"
+},
+{
+"@id": "https://doi.org/10.1038/s41598-020-67620-3",
+"@type": "CreativeWork"
+,"creditText": "Evangeliou, N. & Eckhardt, S. (2020) Uncovering transport, deposition and impact of radionuclides released after the early spring 2020 wildfires in the Chernobyl Exclusion Zone. Scientific Reports 10."
+,"url": "https://doi.org/10.1038/s41598-020-67620-3"
+},
+{
+"@id": "https://doi.org/10.3390/f11030270",
+"@type": "CreativeWork"
+,"creditText": "Bilous, A., Holiaka, D., Matsala, M., Kashparov, V., Schepaschenko, D., Lakyda, P., Shvidenko, A., Myroniuk, V. & Otreshko, L. (2020) 90Sr Content in the Stemwood of Forests within Ukrainian Polissya. Forests 11, 270."
+,"url": "https://doi.org/10.3390/f11030270"
+}
+, {
+"@id": "#part1_Spatial_dataset.csv","name": "1_Spatial_dataset.csv","@type": "File"
+,"encodingFormat": "text/csv"
+,"sha256": "c5318ae49132f59ea35c65878b11b65827334d74e39b98d1c60a6118e32fd499"
+,"lastModified": "2017-07-19T13:15:05"
+,"bytes": 160947
+,"contentUrl": "data/1_Spatial_dataset.csv"
+}
+, {
+"@id": "#part2_Plutonium_isotope_measurements.csv","name": "2_Plutonium_isotope_measurements.csv","@type": "File"
+,"encodingFormat": "text/csv"
+,"sha256": "3a00b0dbcbb903aa66a19b8b0901123f3d819b4a4e8352308ab04ad5d41eacf4"
+,"lastModified": "2017-07-19T13:15:20"
+,"bytes": 4327
+,"contentUrl": "data/2_Plutonium_isotope_measurements.csv"
+}
+, {
+"@id": "#part3_Plutonium_isotope_layers.csv","name": "3_Plutonium_isotope_layers.csv","@type": "File"
+,"encodingFormat": "text/csv"
+,"sha256": "d771943f3c7196eca354a4076f82801cc178e3b70ee7e99f3ca4c4be80aae7f2"
+,"lastModified": "2017-07-19T13:15:24"
+,"bytes": 7973
+,"contentUrl": "data/3_Plutonium_isotope_layers.csv"
+}
+, {
+"@id": "#part4_Hot_Particle_Activity.csv","name": "4_Hot_Particle_Activity.csv","@type": "File"
+,"encodingFormat": "text/csv"
+,"sha256": "3a14f0b8ce93989c2d05b0b7a4de725fff6139ddfd9da0f2f18253781c1dc8ff"
+,"lastModified": "2017-07-19T13:15:28"
+,"bytes": 428821
+,"contentUrl": "data/4_Hot_Particle_Activity.csv"
+}
+, {
+"@id": "#part5_Fuel_particle_dissolution.csv","name": "5_Fuel_particle_dissolution.csv","@type": "File"
+,"encodingFormat": "text/csv"
+,"sha256": "d2e95713f8bcbb43dbea7bb57ed6597bb7a57c67e7dd5d171a2e62d4298f1461"
+,"lastModified": "2017-07-19T13:15:31"
+,"bytes": 4073
+,"contentUrl": "data/5_Fuel_particle_dissolution.csv"
+}
+, {
+"@id": "#part6_Ivankov_background_radiation.csv","name": "6_Ivankov_background_radiation.csv","@type": "File"
+,"encodingFormat": "text/csv"
+,"sha256": "eb00d7b5618821dfcbffa22453f8151aa7df1fc70697600c2a90a349f1af2d0e"
+,"lastModified": "2017-07-19T13:15:34"
+,"bytes": 148301
+,"contentUrl": "data/6_Ivankov_background_radiation.csv"
+}
+, {
+"@id": "#part6_Ivankov_radionuclide_activity.csv","name": "6_Ivankov_radionuclide_activity.csv","@type": "File"
+,"encodingFormat": "text/csv"
+,"sha256": "6fe1be81798a25331f4892bce74c2494aea4f1da4bcbdb11a4d466d78345a286"
+,"lastModified": "2017-07-19T13:15:49"
+,"bytes": 93525
+,"contentUrl": "data/6_Ivankov_radionuclide_activity.csv"
+}
+, {
+"@id": "#distribution0",
+"@type":"DataDownload",
+"contentUrl":"https://data-package.ceh.ac.uk/data/782ec845-2135-4698-8881-b38823e533bf"
+,"encodingFormat":"application/zip"
+}
+, {
+"@id": "https://ror.org/0441cbj57",
+"@type": "Organization",
+"name": "Ukrainian Institute of Agricultural Radiology of National University of Life and Environmental Sciences of Ukraine and CERAD CoE Environmental Radioactivity/Department of Environmental Sciences",
+"identifier": "https://ror.org/0441cbj57"
+},
+{
+"@id": "https://ror.org/00pggkr55",
+"@type": "Organization",
+"name": "Centre for Ecology & Hydrology",
+"identifier": "https://ror.org/00pggkr55"
+}
+]
+}

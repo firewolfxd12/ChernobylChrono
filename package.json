@@ -1,0 +1,13 @@
+{
+  "name": "realchernobyl",
+  "version": "1.0.0",
+  "description": "Interactive Chernobyl radiation map demo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "fetch-data": "node scripts/fetch_data.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

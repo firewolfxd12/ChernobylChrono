@@ -1,0 +1,192 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 50px;
+  width: 100%;
+}
+#controls {
+  position: absolute;
+  bottom: 10px;
+  left: 10%;
+  right: 10%;
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 8px;
+  border-radius: 4px;
+  z-index: 2;
+}
+#isotope-controls {
+  display: flex;
+  gap: 12px;
+  margin-right: 10px;
+  font-size: 14px;
+}
+#isotope-controls label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+/* Description box */
+#description {
+  position: absolute;
+  top: 10px;
+  left: 10%;
+  right: 10%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 8px;
+  border-radius: 4px;
+  z-index: 3;
+  font-size: 14px;
+  color: #000;
+}
+/* Legend box */
+#legend {
+  position: absolute;
+  bottom: 100px;
+  right: 10%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 8px;
+  border-radius: 4px;
+  z-index: 3;
+  font-size: 12px;
+  color: #000;
+}
+#legend .legend-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+}
+#legend .legend-color {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+#slider {
+  flex: 1;
+  margin-right: 10px;
+}
+#play-button {
+  margin-right: 10px;
+  padding: 4px 8px;
+}
+#year-label {
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+/* Slider styling */
+#slider .noUi-target {
+  background: #e0e0e0;
+  height: 6px;
+}
+#slider .noUi-connect {
+  background: #3b99fc;
+}
+#slider .noUi-horizontal .noUi-handle {
+  width: 18px;
+  height: 18px;
+  top: -6px;
+  background: #fff;
+  border: 2px solid #3b99fc;
+  border-radius: 50%;
+}
+/* Modern button styling */
+#play-button {
+  background-color: #3b99fc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#play-button:hover {
+  background-color: #1a78d6;
+}
+/* Speed control styling */
+#speed-control {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+#speed-control input[type="range"] {
+  cursor: pointer;
+}
+ #speed-label {
+  min-width: 40px;
+  text-align: right;
+}
+/* Field selector styling */
+#field-select-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  margin-right: 10px;
+}
+#field-select {
+  padding: 4px 6px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* Dynamic field description box */
+#field-description {
+  position: absolute;
+  bottom: 140px;
+  left: 10%;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 8px;
+  border-radius: 4px;
+  z-index: 3;
+  font-size: 12px;
+  color: #000;
+  max-width: 300px;
+}
+/* Welcome screen overlay */
+#welcome-screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255,255,255,0.8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  text-align: center;
+}
+#welcome-screen h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+#welcome-screen p {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+#welcome-screen button {
+  padding: 0.8em 1.5em;
+  font-size: 1em;
+  background-color: #3b99fc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+#welcome-screen button:hover {
+  background-color: #1a78d6;
+}
