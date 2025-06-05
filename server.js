@@ -106,6 +106,8 @@ function parseDate(raw) {
   return new Date(NaN);
 }
 
+const EXPLOSION_DATE = new Date('1986-04-26');
+
 // API: list available fields
 app.get('/api/fields', (req, res) => {
   const fields = datasets[defaultDatasetKey].fields;
@@ -151,10 +153,12 @@ app.get('/api/radiation', (req, res) => {
     if (!groups[key]) groups[key] = { coords, entries: [entry] };
     else groups[key].entries.push(entry);
   });
-  const targetDate = new Date(dateKey);
+  const targetDate = parseDate(dateKey);
+  if (isNaN(targetDate)) {
+    return res.status(400).json({ error: 'Invalid date parameter' });
+  }
   // If before explosion date, show no data until explosion
-  const explosionDate = new Date('1986-04-26');
-  if (targetDate < explosionDate) {
+  if (targetDate < EXPLOSION_DATE) {
     return res.json({ type: 'FeatureCollection', features: [] });
   }
   // Half-life mapping (years) for key radionuclides
